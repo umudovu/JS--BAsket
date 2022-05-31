@@ -51,7 +51,7 @@ if (localStorage.getItem("basket") != null) {
             if (product.count > 0) {
                 product.count -= 1;
                 localStorage.setItem("basket", JSON.stringify(arr));
-                //window.location.reload();
+                window.location.reload();
             } else {
                 this.parentElement.parentElement.remove();
             }
